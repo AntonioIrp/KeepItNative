@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- DEFAULT BUTTON TITLES-->
+    <string-array android:id="@+id/MenuButtonsTitles" name="MenuButtonsTitles">
+        <item>Button 1</item>
+        <item>Button 2</item>
+        <item>Button 3</item>
+        <item>URL Schemes Test</item> 
+    </string-array>
+    
+    <!-- BUTTONS LINKS-->
+    <string-array android:id="@+id/MenuButtonsLinks" name="MenuButtonsLinks">
+      	<item>https://google.com</item>
+        <item>http://youtube.com</item>
+        <item>http://www10.ujaen.es/</item>
+        <item>file:///android_asset/helptext/schemes_test.html</item> 
+    </string-array>
+    
+    <!-- BUTTONS ICONS-->
+    <string-array  android:id="@+id/MenuButtonsIcons" name="MenuButtonsIcons">
+      	<item>button_1</item>
+        <item>button_2</item>
+        <item>button_3</item>
+        <item>button_4</item>   
+    </string-array>
+    
+    <!-- "ABOUT" BUTTON CONFIGURATION-->
+    <!-- ITEMS: BUTTON NAME, BUTTON IMAGE NAME, BUTTON HEX COLOR CODE RESPECTIVELY-->
+   	<string-array android:id="@+id/MenuButtonsTitles" name="AboutButtonConfiguration">
+        <item>About My App</item>
+        <item>about_button</item>
+        <item>#191516</item>
+    </string-array>
+    
+   	
+   	<!-- APP COLOR THEMES-->
+   	<!-- #########################################################-->
+    <string-array android:id="@+id/Stork" name="Stork">
+	    <item name="stork_top_bar">#91b400</item>
+	    <item name="stork_share_menu">#91b400</item>
+	    <item name="stork_dark_lines">#554f37</item>
+	    <item name="stork_button_1">#91b400</item>
+	    <item name="stork_button_2">#191516</item>
+	    <item name="stork_button_3">#191516</item>
+	    <item name="stork_button_4">#191516</item>
+    </string-array>
+	    
+	<string-array android:id="@+id/Sea_sunset" name="Sea_sunset">
+	    <item name="sea_sunset_top_bar">#ca9e93</item>
+	    <item name="sea_sunset_share_menu">#ca9e93</item>
+	    <item name="sea_sunset_dark_lines">#9a7970</item>
+	    <item name="sea_sunset_button_1">#ca9e93</item>
+	    <item name="sea_sunset_button_2">#113c29</item>
+	    <item name="sea_sunset_button_3">#113c29</item>
+	    <item name="sea_sunset_button_4">#113c29</item>
+    </string-array>
+	    
+    <string-array android:id="@+id/Poweredpurple" name="Powered_purple">
+	    <item name="powered_purple_top_bar">#7a4366</item>
+	    <item name="powered_purple_share_menu">#7a4366</item>
+	    <item name="powered_purple_dark_lines">#4a4248</item>
+	    <item name="powered_purple_button_1">#7a4366</item>
+	    <item name="powered_purple_button_2">#966e82</item>
+	    <item name="powered_purple_button_3">#966e82</item>
+	    <item name="powered_purple_button_4">#966e82</item>
+    </string-array>
+	    
+    <string-array android:id="@+id/Purple" name="Purple">
+	    <item name="purple_top_bar">#7C4DFF</item>
+	    <item name="purple_top_bar2">#7C4DFF</item>
+	    <item name="purple_share_menu">#7C4DFF</item>
+	    <item name="purple_dark_lines">#651FFF</item>
+	    <item name="purple_button_1">#B39DDB</item>
+	    <item name="purple_button_2">#9575CD</item>
+	    <item name="purple_button_3">#7E57C2</item>
+	    <item name="purple_button_4">#673AB7</item>
+	</string-array>
+    
+    <string-array android:id="@+id/Blue" name="Blue">
+	    <item name="blue_top_bar">#2196F3</item>
+	    <item name="blue_share_menu">#2196F3</item>
+	    <item name="blue_dark_lines">#2979FF</item>
+	    <item name="blue_button_1">#42A5F5</item>
+	    <item name="blue_button_2">#2196F3</item>
+	    <item name="blue_button_3">#1E88E5</item>
+	    <item name="blue_button_4">#1976D2</item>
+    </string-array>
+    
+    <string-array android:id="@+id/Red" name="Red">
+	    <item name="red_top_bar">#F44336</item>
+	    <item name="red_share_menu">#F44336</item>
+	    <item name="red_dark_lines">#D32F2F</item>
+	    <item name="red_button_1">#EF5350</item>
+	    <item name="red_button_2">#F44336</item>
+	    <item name="red_button_3">#E53935</item>
+	    <item name="red_button_4">#D32F2F</item>
+    </string-array>
+	    
+    <string-array android:id="@+id/Pink" name="Pink">
+	    <item name="pink_top_bar">#E91E63</item>
+	    <item name="pink_share_menu">#E91E63</item>
+	    <item name="pink_dark_lines">#F50057</item>
+	    <item name="pink_button_1">#EC407A</item>
+	    <item name="pink_button_2">#E91E63</item>
+	    <item name="pink_button_3">#D81B60</item>
+	    <item name="pink_button_4">#C2185B</item>
+    </string-array>
+	    
+    <string-array android:id="@+id/Green" name="Green">
+	    <item name="green_top_bar">#4CAF50</item>
+	    <item name="green_share_menu">#4CAF50</item>
+	    <item name="green_dark_lines">#1B5E20</item>
+	    <item name="green_button_1">#66BB6A</item>
+	    <item name="green_button_2">#4CAF50</item>
+	    <item name="green_button_3">#43A047</item>
+	    <item name="green_button_4">#388E3C</item>
+    </string-array>
+    
+    <string-array android:id="@+id/Orange" name="Orange">
+       <item name="orange_top_bar">#FF9800</item>
+    	<item name="orange_share_menu">#FF9800</item>
+    	<item name="orange_dark_lines">#F57C00</item>
+    	<item name="orange_button_1">#F57C00</item>
+    	<item name="orange_button_2">#FF9800</item>
+    	<item name="orange_button_3">#FF9800</item>
+   	 	<item name="orange_button_4">#FF9800</item>
+   	 	<item name="orange_button_4">#FF9800</item>   
+    </string-array>
+    
+   <string-array android:id="@+id/RateMyAppDialogMod" name="rate_my_app_dialog">
+        <item>@string/rate_dialog_no</item>
+        <item>@string/rate_dialog_cancel</item>
+        <item>@string/rate_dialog_ok</item> 
+    </string-array>
+    
+    
+</resources>

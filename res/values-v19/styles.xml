@@ -1,0 +1,31 @@
+<resources>
+    <style name="FullscreenWithOpaqueNavigation" parent="android:Theme.Holo.Light.NoActionBar.Fullscreen">
+       	<item name="android:windowTranslucentNavigation">false</item> 
+    </style>
+    
+    <style name="FullscreenWithTranslucentNavigation" parent="android:Theme.Holo.Light.NoActionBar.Fullscreen">
+		<item name="android:windowTranslucentNavigation">true</item>	
+    </style>
+    
+    <style name="StatusbarAndNavigationTranslucent" parent="android:Theme.Holo.Light.NoActionBar.TranslucentDecor">
+    	<item name="android:windowTranslucentStatus">true</item>
+		<item name="android:windowTranslucentNavigation">true</item>
+		<item name="android:windowNoTitle">false</item>	
+    </style>
+    
+    <style name="StatusbartAndNavigationOpaque" parent="android:Theme.Holo.Light.NoActionBar">
+		<item name="android:windowTranslucentNavigation">false</item>
+		<item name="android:windowTranslucentStatus">false</item>
+    </style>
+    
+    <style name="StatusbarOpaqueAndNavigationTranslucent" parent="android:Theme.Holo.Light.NoActionBar">
+		<item name="android:windowTranslucentNavigation">true</item>
+		<item name="android:windowNoTitle">false</item>	
+    </style>
+    
+    <style name="StatusbarTranslucentAndNavigationOpaque" parent="android:Theme.Holo.Light.NoActionBar.TranslucentDecor">
+		<item name="android:windowTranslucentNavigation">false</item>
+		<item name="android:windowTranslucentStatus">true</item>
+		<item name="android:windowNoTitle">false</item>	
+    </style>
+</resources>

@@ -1,0 +1,396 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.keepitnative.MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#7C4DFF"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/topBarButtons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/topLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:id="@+id/menuButton"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="5dp"
+                            android:alpha="0.87"
+                            android:onClick="showMenu"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_menu" />
+
+                        <RelativeLayout
+                            android:id="@+id/topPlaceholder"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toLeftOf="@+id/shareButton"
+                            android:layout_toRightOf="@+id/menuButton" >
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="7dp" >
+
+                                <ImageView
+                                    android:id="@+id/appFavIcon"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:adjustViewBounds="true"
+                                    android:maxHeight="32dp"
+                                    android:maxWidth="32dp" />
+
+                                <TextView
+                                    android:id="@+id/webTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginLeft="7dp"
+                                    android:layout_toRightOf="@id/appFavIcon"
+                                    android:fontFamily="sans-serif-medium"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="11sp" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/shareButton"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="5dp"
+                            android:onClick="showShareMenu"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_share" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/topDarkLine"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@id/topBarButtons"
+                    android:background="#651FFF"
+                    android:orientation="vertical" >
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/adMobContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topBar"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/webViewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/adMobContainer" >
+
+        <WebView
+            android:id="@+id/webContainer"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/transparencyBackground"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/topBar"
+        android:background="@color/transparency_background"
+        android:onClick="onTransparencyBackground"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/shareMenuPlaceholder"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topBar"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/shareMenuArrowIndicator"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="-10dp"
+                android:src="@drawable/arrow_up" />
+
+            <LinearLayout
+                android:id="@+id/shareMenuButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/shareMenuArrowIndicator"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:id="@+id/shareMenuButton1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:onClick="onClickShareButton1"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true" >
+
+                                <ImageView
+                                    android:id="@+id/shareButtonIcon1"
+                                    android:layout_width="48dp"
+                                    android:layout_height="48dp"
+                                    android:layout_marginRight="8dp"
+                                    android:src="@drawable/ic_share_link" />
+
+                                <TextView
+                                    android:id="@+id/shareButtonText1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_toRightOf="@id/shareButtonIcon1"
+                                    android:fontFamily="sans-serif-medium"
+                                    android:text="@string/share_button_text_1"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="15sp" />
+
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/shareMenuSeparator"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/shareMenuButton1"
+                        android:background="#ffffff"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/shareMenuButton2"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_below="@id/shareMenuSeparator"
+                        android:onClick="onClickShareButton2"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true" >
+
+                                <ImageView
+                                    android:id="@+id/shareButtonIcon2"
+                                    android:layout_width="48dp"
+                                    android:layout_height="48dp"
+                                    android:layout_marginRight="7dp"
+                                    android:src="@drawable/ic_share_picture" />
+
+                                <TextView
+                                    android:id="@+id/shareButtonText2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_toRightOf="@id/shareButtonIcon2"
+                                    android:fontFamily="sans-serif-medium"
+                                    android:text="@string/share_button_text_2"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="15sp" />
+
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/shareMenuBottomLine"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/shareMenuButton2"
+                        android:background="#651FFF"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomMenu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:animateLayoutChanges="true"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <RelativeLayout
+            android:id="@+id/menuContainer"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ListView
+                android:id="@+id/listOfMenuButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false" >
+
+            </ListView>
+
+            <LinearLayout
+                android:id="@+id/aboutButton"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_below="@id/listOfMenuButtons"
+                android:onClick="onAboutButtonClick"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true" >
+
+                        <ImageView
+                            android:id="@+id/aboutImageButton"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_marginRight="16dp" />
+
+                        <TextView
+                            android:id="@+id/AboutButtonText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/aboutImageButton"
+                            android:text="Medium Text"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/menu_text_color"
+                            android:textSize="15sp" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/noConnectionLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/transparency_background"
+        android:onClick="retryConnection"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageView
+                android:id="@+id/noConnectionImageView"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_error" />
+
+            <TextView
+                android:id="@+id/noConnectionErrorText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/noConnectionImageView"
+                android:layout_centerInParent="true"
+                android:text="@string/error_connection"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/text_color" />
+
+            <TextView
+                android:id="@+id/clicToRetry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/noConnectionErrorText"
+                android:layout_centerInParent="true"
+                android:text="@string/click_to_retry"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/text_color" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Keep It Native</string>
+    <string name="sharing_menu_title">Share this</string>
+    <string name="share_with">Share with</string>
+    <string name="share_button_text_2">Share Image</string>
+    <string name="share_button_text_1">Share Link</string>
+    <string name="error_connection">No Internet connection</string>
+    <string name="error_sharing_link">This Link cannot be shared because it is a system resource</string>
+    <string name="click_to_retry">(Click to retry)</string>
+    <string name="sharing_image_introduction_text">Ey! Check this photo:</string>
+    <string name="sharing_link_introduction_text">Ey! Check this link:</string>
+    <string name="save_image">Save image</string>
+    <string name="view_image">View image</string>
+    <string name="share_image">Share image</string>
+    <string name="open_link">Open link</string>
+    <string name="save_as_link" >Save link as</string>
+    <string name="share_link">Share link</string>
+    <string name="copy_link">Copy link</string>
+    <string name="link_is_in_clipboard">Link copied to clipboard</string>
+    
+    <string name="about_of_title_text_view">About Of...</string>
+    <string name="about_of_twitter_follow_text_view">Follow @MyTwitter</string>
+    <string name="about_of_facebook_button">Facebook Name</string>
+    <string name="about_of_go_to_maps">View maps</string>
+    <string name="about_of_email_text_view">Email@example.com</string>
+    <string name="about_of_generic_link">www.example.com</string>
+    <string name="about_of_button_tel">Tel: +31 123 321 1</string>
+    <string name="about_of_version_text_view">Version 1.0</string>
+    <string name="about_of_footer_text_view">2014</string>
+    
+    <string name="rate_dialog_title">Rate this app</string>
+    <string name="rate_dialog_message">If you enjoy playing this app, would you mind taking a moment to rate it? It won\'t take more than a minute. Thanks for your support!</string>
+    <string name="rate_dialog_ok">Rate It Now</string>
+    <string name="rate_dialog_cancel">Remind Me Later</string>
+    <string name="rate_dialog_no">No, Thanks</string>
+    
+    
+
+</resources>

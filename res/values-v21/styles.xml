@@ -1,0 +1,29 @@
+<resources>
+    <style name="FullscreenWithOpaqueNavigation" parent="android:Theme.Material.Light.NoActionBar.Fullscreen"></style>
+    
+    <style name="FullscreenWithTranslucentNavigation" parent="android:Theme.Material.Light.NoActionBar.Fullscreen">
+		<item name="android:windowTranslucentNavigation">true</item>	
+    </style>
+    
+    <style name="StatusbarAndNavigationTranslucent" parent="android:Theme.Material.Light.NoActionBar">
+		<item name="android:windowTranslucentNavigation">true</item>					
+    </style>
+    
+    <style name="StatusbartAndNavigationOpaque" parent="android:Theme.Material.Light.NoActionBar">
+		<item name="android:windowTranslucentNavigation">false</item>
+		<item name="android:windowTranslucentStatus">false</item>
+		<item name="android:statusBarColor">@android:color/black</item>
+    </style>
+    
+    <style name="StatusbarOpaqueAndNavigationTranslucent" parent="android:Theme.Material.Light.NoActionBar.TranslucentDecor">
+		<item name="android:windowTranslucentNavigation">true</item>
+		<item name="android:windowTranslucentStatus">false</item>
+    </style>
+    
+ 
+    <style name="StatusbarTranslucentAndNavigationOpaque" parent="android:Theme.Material.Light.NoActionBar.TranslucentDecor">
+        <item name="android:windowTranslucentNavigation">false</item>
+    </style>
+   
+    
+</resources>

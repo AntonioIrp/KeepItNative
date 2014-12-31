@@ -1,0 +1,14 @@
+<resources>
+    <style name="FullscreenWithOpaqueNavigation" parent="android:Theme.Holo.Light.NoActionBar.Fullscreen"></style>
+    
+    <style name="FullscreenWithTranslucentNavigation" parent="android:Theme.Holo.Light.NoActionBar.Fullscreen"></style>
+    
+    <style name="StatusbarAndNavigationTranslucent" parent="android:Theme.Holo.Light.NoActionBar"></style>
+    
+    <style name="StatusbartAndNavigationOpaque" parent="android:Theme.Holo.Light.NoActionBar"></style>
+    
+    <style name="StatusbarOpaqueAndNavigationTranslucent" parent="android:Theme.Holo.Light.NoActionBar"></style>
+    
+    <style name="StatusbarTranslucentAndNavigationOpaque" parent="android:Theme.Holo.Light.NoActionBar"></style>   
+
+</resources>
